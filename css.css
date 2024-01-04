@@ -80,7 +80,7 @@ width: 100%}
 
 
 .menu{width: 100%;
-max-width:1200px;
+max-width:1500px;
 margin: 0 auto;
 padding-top: 20px;
 justify-content: center;
@@ -113,7 +113,7 @@ font-style: oblique;}
 .menu ul {
 display: flex;
 width: 100%;
-padding-left: 16%}
+padding-left: 5%}
 
 .menu ul {
 list-style: none;}
@@ -121,7 +121,7 @@ list-style: none;}
  .menu ul  a{
  text-decoration: none;
  color: white ;
- font-size: 18px;
+ font-size: 19px;
 margin: 5px;
 border-bottom:2px solid transparent;
 	font-family:Modric;	}
@@ -130,6 +130,7 @@ border-bottom:2px solid transparent;
 	 	 	color:#FFCB03;
 border-bottom:2px solid #FFCB03;
  	 	transition: all 1s ease;}
+
 
 #numero{
   width:190px;
@@ -145,7 +146,7 @@ background-size: 300% 100%;
 display: flex;
 align-items: center;
 height:30px;justify-content: center;
-font-size: 20px;
+font-size: 19px;
 font-family:Modric;	}
 
 #numero:hover {
@@ -159,7 +160,7 @@ padding: 10px 5px;}
 
 
 .what{position: fixed;
-bottom:90px;
+bottom:80px;
 right:7%;
 color:green;
 z-index: 999;
@@ -170,7 +171,7 @@ border-radius: 50%;
 position: absolute;
 background:white ;
 border-radius: 50%;
-font-size:50px;
+font-size:45px;
 animation: what 5s infinite;}
 
 
@@ -191,7 +192,7 @@ color: white;}
 grid-template-columns: repeat(2,1fr);
 width: 90%;
 margin: 0 auto;
-max-width: 1200px}
+max-width: 1500px}
 
 
 .flex article img{width: 100%;
@@ -347,7 +348,7 @@ margin-top: 30px;
 font-family:usar2;
 text-shadow: 1px 1px 1px black;
 border: 1px solid white;
-background: rgba(00,00,00,0.5);;
+background:orange;
 border-radius: 20px}
 
 
@@ -419,7 +420,7 @@ height: 170px}
  	 text-align: center; 
 background-size: 100% 100%;
 background-repeat: no-repeat;
-padding: 60px 20px;
+padding: 40px 20px;
  background-image: url(img/serv.svg);	
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -444,9 +445,9 @@ font-family:didactgothic}
 
 .serv{display:grid;
 grid-template-columns: repeat(3,1fr);
-width: 95%;
+width: 100%;
 margin: 20px auto;
-max-width: 900px;
+max-width: 950px;
 grid-gap: 20px;}
 
 
@@ -456,7 +457,7 @@ padding: 15px 10px;
 box-shadow: 10px 5px 15px black;
 margin-top: 10px;
 color: white;
-max-width: 350px;
+max-width: 370px;
 margin: 0 auto}
 
 
@@ -541,8 +542,8 @@ color:#404040 }
 width: 850px;
 justify-content: center;
 align-items: center;
-margin: 70px auto;
-margin-top: -20px}
+margin: 50px auto;
+margin-top: -70px}
 
 .tiempo div{padding: 10px 30px;
 margin:0px auto;
@@ -1078,9 +1079,10 @@ margin: 60px auto;}
 .saludo-contacto h3{font-size: 32px;
 letter-spacing: 1px;
 margin: 40px 0px;
-font-family:didactgothic;
 color:#ff7915;
-text-align: center;}
+text-align: center;
+font-family:usar2;
+		}
 
 
 
@@ -1164,14 +1166,14 @@ margin: 0 auto}
 
 .form h4{font-size: 30px;
 	  	font-family:usar2;
-		color: rgb(242,133,0); 
 		padding:20px;
 		width: 100%;
 		display: flex;
 		margin: 0 auto;
 		justify-content: center;
 		align-items: center;
-		 letter-spacing: 3px}
+		 letter-spacing: 3px;
+		color:#ff7915;}
 
 .div-form{display: flex;
 	background: white;border-radius: 10px;
@@ -1375,7 +1377,7 @@ font-family:didactgothic;
 width: 200px;;display: flex;
 justify-content: center;
 align-items: center;
-border-bottom:0.5px solid white }
+border-bottom:0.1px solid orange }
 
 
 .flex-nosotros .mensaje h2{ 
@@ -1404,8 +1406,9 @@ width: 700px;}
 .somos{width: 100%;
 background: #181e23;}
 
-.somos article{width: 1200px; margin: 0 auto;
-display: flex;}
+.somos article{width: 1050px; margin: 0 auto;
+display: flex;
+max-width: 1500px}
 
 .somos h3{font-size: 23px;
 letter-spacing: 1px;;
@@ -1433,7 +1436,7 @@ align-items: center;}
 
 .quienes-img{background: url(img/img-parax.jpg);
 background-size: 100% 100%;
-width: 510px;
+width:700px;
 height: 350px;
 margin-left: 50px;
 border-radius: 0px;
@@ -1459,20 +1462,24 @@ height: 300px}
 
 
 .servicos-nosotros{
-width: 100%;max-width: 1000px;
+width: 100%;max-width: 1200px;
 margin: 0 auto}
 
 
-.servicos-nosotros article {width: 400px
-;padding:50px 10px;}
+.servicos-nosotros article {width: 1200px
+;padding:50px 10px;
+}
 
 .servicos-nosotros article h4{width: 90%;
-padding-top: 50px}
+padding-top: 10px}
 
 .servicos-nosotros-img{display: grid;
-grid-template-columns: repeat(2,1fr);}
+grid-template-columns: repeat(2,1fr);
+width: 1000px;
+}
 
-.servicos-nosotros-img figure img{width: 250px; height: 200px}
+.servicos-nosotros-img figure img{width: 400px; height: 300px;
+border-right: 1px solid orange }
 
 @media screen and (min-width:550px ) and (max-width:1023px)
 
@@ -2916,7 +2923,7 @@ margin-top: -50px;
 margin-left: 70px;
 font-family:didactgothic;
 color: white;
-font-size: 14px;
+font-size: 12px;
 width:270px;}
 
 
