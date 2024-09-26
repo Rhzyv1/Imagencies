@@ -31,8 +31,6 @@ html::-webkit-scrollbar-thumb:hover {
 	font-family:usar;	
 	src:url(fonts/usar.ttf)}
 
-
-
 @font-face{
 	font-family:usar2;	
 	src:url(fonts/usar2.ttf)}
@@ -53,19 +51,16 @@ z-index: 2}
 opacity:1;
 visibility:visible;
 width: 100%;
-height:00px;
 background:rgba(0,0,0,0.9);
 position: absolute;
 top: -600px;
 opacity:0 ;visibility: hidden;}
 
-
-
 /*Header*/
-
 .head{ background-image: url(img/1285112.jpg);
-		width: 100%; height: 700px;	
-		background-size: cover;
+		width: 100%;
+		height: 650px;
+		background-size:100% 100%;
 		background-repeat: no-repeat;
 		 background-position: center;
     	position: relative; 
@@ -74,19 +69,18 @@ opacity:0 ;visibility: hidden;}
 .contenedor{ 
  margin: 0 auto;
 color: white;
-background:rgba(0,0,0,0.9);
-height: 82px;
+background:rgba(0,0,0,0.81);
 width: 100%}		
 
 
 .menu{width: 100%;
 max-width:1300px;
 margin: 0 auto;
-padding-top: 20px;
+padding-top:10px;
 justify-content: right;
 align-items: center;
 display:grid;
-	grid-template-columns: repeat(2,1fr);}
+grid-template-columns: repeat(2,1fr);}
 
 .contenedor .logo{width: 100%;
 margin-left: 2%;}
@@ -96,34 +90,35 @@ text-decoration: none;
 color: white;}
 
 .contenedor .menu a img{
-width: 85px;
-height: 75px;
+width: 80px;
+height:70px;
 margin: 0px 2px;
 border-radius: 50%;
-padding: 5px;margin-top:-10px;}
+padding: 5px;
+margin-top:-10px;}
 
 
 .contenedor .logo a h1{
 	font-family:Modric;
-margin-top: 12px;
-font-size: 35px;}
+margin-top:7px;
+font-size: 38px;}
 
+.contenedor .logo a h1:hover
+{text-shadow:0px 0px 1px yellow}
 
 .menu ul {
 display: flex;
 width: 100%;
-
-justify-content: right;
-align-items: right;}
+justify-content:center;
+align-items:center;}
 
 .menu ul {
-list-style: none;
-}
+list-style: none;}
 
  .menu ul  a{
  text-decoration: none;
  color: white ;
- font-size: 19px;
+ font-size: 20px;
 margin: 5px;
 border-bottom:2px solid transparent;
 	font-family:Modric;	}
@@ -133,23 +128,18 @@ border-bottom:2px solid transparent;
 border-bottom:2px solid #FFCB03;
  	 	transition: all 1s ease;}
 
-
 #numero{
-  width:190px;
   color:black;
   cursor: pointer;
   text-align:center;
   border: none;
   border-radius: 20px;
-  transition: all 2s ease-in-out;
-margin-top: -0px;
-background-size: 300% 100%;
+background-size: 500% 100%;
 ;background-image: linear-gradient( to right,#FFD700,#ff9a44,#e75516,#e75516);
-display: flex;
-align-items: center;
-height:30px;justify-content: center;
-font-size: 19px;
-font-family:Modric;	}
+font-size:18px;
+font-family:Modric;	
+padding: 5px 10px;
+margin-top: -0px}
 
 #numero:hover {
   background-size: 100% 50%;
@@ -159,27 +149,26 @@ font-family:Modric;	}
 padding: 10px 5px;}
 
 
-
-
 .what{position: fixed;
 bottom:80px;
 right:7%;
 color:green;
 z-index: 999;
-box-shadow: 1px 1px 1px black }
+box-shadow: 1px 1px 1px black ;}
 	
 .what a i{padding:10px;
 border-radius: 50%;
 position: absolute;
-background:white ;
+background:#eae6ca;
 border-radius: 50%;
-font-size:45px;
-animation: what 5s infinite;}
+font-size:40px;
+animation: what 5s infinite;
+color: green}
 
 
 @keyframes what{
 	0%{box-shadow: 0 0 0 3px green;}
-	50%{box-shadow: 0 0 30px green;}
+	50%{box-shadow: 0 0 10px green;}
 	100%{box-shadow: 0 0 3px green;}}
 
 
@@ -191,46 +180,49 @@ color: white;}
 
 
 .flex{display: grid;
-grid-template-columns: repeat(2,1fr);
+grid-template-columns: repeat(1,1fr);
 width: 95%;
 margin: 0 auto;
-max-width: 1500px}
+max-width: 1300px}
 
 
 .flex article img{width: 100%;
 margin-top: 200px;
-height: 300px;
-animation: up 7s infinite;
-max-width: 600px}
+height: 250px;
+animation: up 10s infinite;
+max-width: 550px}
 
 @keyframes up{
-	0%{transform: translateY(0px);}
-	50%{transform: translateY(-75px);}
-	100%{transform: translateY(0px);}}
+	0%{transform: translateY(0px)}
+	50%{transform: translateY(-50px)}
+	100%{transform: translateY(0px)}}
 
 
 .mensaje{
-width: 500px;
+width: 700px;
 margin: 0px auto ;
-margin-top: 230px;
+margin-top: 220px;
 background: rgba(0,0,0,0.0);}
 
 .mensaje h1{ 
 color: white ;
-font-size:48px; 
+font-size:70px; 
 margin: 10px 0px;
-width: 95%;
-letter-spacing: 2px;
-font-family:Modric}
+letter-spacing:px;
+font-family:Modric;
+text-align: center;
+
+font-family:usar2;}
 
 .mensaje h1 b{color:#FFCB03;
+font-family:Modric;
 
-font-family:Modric}
+font-family:usar2;}
 
 
  .mensaje a p{ color:white ;	
 font-size: 28px; 
-margin: 20px 0px;
+margin: 20px auto;
 width: 100%;
 text-align: left;
 font-family:didactgothic;
@@ -246,43 +238,39 @@ align-items:center;}
  .mensaje a p b{background:#FFCB03;
 color: black;
 font-family: monospace;
-font-size: 28px; 
+font-size:30px; 
 height: 70px;
 display:flex;
 align-items:center;
-width:50px;
+width:60px;
 padding-left:10px;
 margin-right:10px; }
 
  .mensaje a {text-decoration: none;}
  
-
  .mensaje p:hover{
  	 transition: all 500ms  ease-in-out;
-		;transform: scale(1.07);;
-		color: #FFCB03;}
+		color: #FFCB03;
+	transform: translateX(20px);}
 
 /*Saludo agencia*/
-
 .agencia{display: grid;
 grid-template-columns: repeat(2,1fr);
 margin: 60px auto;
 grid-gap: 20px;
-max-width:1100px;
+max-width:1200px;
 width: 90%;}
 
 .agencia h2{font-size: 35px;
 letter-spacing: 1px;
 margin: 0px;
-width: 400px;
 font-family:usar2;
 color:#ff7915;
-border-bottom: 3px solid #ff7915;
 padding: 5px;
-margin-bottom: 20px}
+margin-bottom:10px;}
 
 .agencia p{ 
-font-size: 18px;
+font-size: 19px;
 text-align: left;
 font-family:didactgothic;}
 
@@ -290,27 +278,25 @@ font-family:didactgothic;}
 font-family:didactgothic;
 	font-size: 18px;
 text-align: left;
-margin-top: -6px;
-}
-
+margin-top: -6px;}
 
 .agencia-img{background:orange;
-width: 80%	
-;height: 250px;
+width: 400px	
+;height: 280px;
 border-radius: 20px	;
 margin: 0 auto;
 margin-top: 20px}
 
 .agencia-img img{width: 100% ;
-height:240px;
+height:270px;
 margin-left:5%;
 margin-top: -3%;
 border-radius: 20px;}
 
 .agencia-img:hover> img{width: 100% ;
-height:240px;
+height:270px;
 margin-left:-5%;
-margin-top: 5%;
+margin-top: 3;
 border-radius: 20px;
 transition: all 1.5s ease-in-out;}
 
@@ -384,9 +370,7 @@ width: 400px}
 	 align-items: center;
 	 justify-content: center;
  	margin: 10px auto;
- 	width: 100%;
-}
-
+ 	width: 100%;}
 
 .asesorar-aa div {width: 90%;}
 
@@ -403,27 +387,24 @@ height: 200px}
  			color: black}
 
 
-.asesorar-aa div p { font-family:TraditionSansXLight;
- 		font-size: 18px; 
- 		padding: 10px 20px ;
- 			justify-content: center;
- 			 text-align:center; 
- 			color: rgb(3, 2,0);
- 			width: 100%;
-
+.asesorar-aa div p {
+font-family:TraditionSansXLight;
+font-size: 18px; 
+padding: 10px 20px ;
+justify-content: center;
+text-align:center; 
+color: rgb(3, 2,0);
+width: 100%;
 height: 170px}
 
-
-
 /*Servicios*/
-
- .ser{width: 100%;
+.ser{width: 100%;
  	 align-items: center; 
  	 margin:10px auto; 
  	 text-align: center; 
 background-size: 100% 100%;
 background-repeat: no-repeat;
-padding: 40px 20px;
+padding:10px;
  background-image: url(img/serv.svg);	
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -433,16 +414,16 @@ padding: 40px 20px;
 font-family:usar2;
 font-size: 35px;
 margin: 10px auto;
-padding-top: 40px;
+padding-top:20px;
 text-shadow: 1px 1px 1px black}
 
  .ser p{color: white ;	
-font-size:19px;
-padding:10px;
+font-size:20px;
+padding:5px;
 text-align: center;
 width: 60%;
 margin: 0 auto;
-line-height: 1.5;
+line-height: 1.2;
 max-width: 700px;
 font-family:didactgothic}
 
@@ -464,15 +445,15 @@ max-width: 370px;
 margin: 0 auto}
 
 
-.serv .servicio i{font-size:56px;
-margin-top: 20px;
+.serv .servicio i{font-size:50px;
+margin-top: 10px;
 margin-bottom: 10px;
 color:#FFCB03}
 
 
 .serv .servicio h4{
 font-family:didactgothic; 		
-font-size: 20px;
+font-size: 21px;
 margin: 5px 10px; 
 opacity: 0.9;
 letter-spacing: 1px;
@@ -484,7 +465,7 @@ font-family:didactgothic;
  justify-content: center;
  text-align: center;
 opacity: 0.9;
-width: 100%;
+width: 95%;
 padding: 0px;
 padding-bottom: 10px}
 
@@ -501,7 +482,7 @@ cursor: pointer;}
 
 
 .servicio:hover> i{
-margin-top: 20px;
+margin-top: 10px;
 margin-bottom: 10px;
 color:black}
 
@@ -566,14 +547,14 @@ color: gray}
 .tiempo div i p{
 font-size: 45px; 
 color:rgb(0,0,11);
-padding-left: 10px;
-font-family:usar2; 
-color: gray}
+padding-left: 10px; 
+color: gray;
+font-family:didactgothic;	}
 
 .tiempo div p{
-font-size: 21px; 
-padding: 5px 0px;
-font-family:usar; }
+font-size:20px; 
+font-family:didactgothic;	
+text-align: center; }
 
 
 .tiempo div:hover > i {
@@ -586,33 +567,36 @@ color:#ff7915;
 cursor: pointer; }
 
 
+.tiempo div:hover >  p{
+color:#ff7915;
+cursor: pointer; }
+
 
 .clientes{
     color: white;
-    padding: 50px;
-background: #181e23;
+    padding:20px;
+background: #181a23;
 width: 100%}
 
 .clientes-a{
 margin: 0 auto;
-max-width: 1200px;
+max-width: 1300px;
 width: 100%;} 
 
-.texto-cliente h5{font-size: 27px;
-letter-spacing: 1px;
+.texto-cliente h5{font-size: 30px;
 margin: 10px auto;
 width: 140px;
 color:#FFCB03;
 text-align: center;
 font-family:didactgothic;
 border-bottom: 1px solid #FFCB03;
-padding: 5px;
+padding:1px;
 letter-spacing: 2px}
 
-.texto-cliente h6{font-size: 32px;
+.texto-cliente h6{font-size: 30px;
 letter-spacing: 1px;
-margin: 20px auto;
-width: 600px;
+margin: 10px auto;
+width: 500px;
 color:#ff7915;
 text-align: center;
 font-family:usar2;
@@ -621,7 +605,7 @@ color: white}
 .clientes-img {width: 100%;
 margin: auto;
 overflow: hidden;
-margin:40px auto;}
+margin:20px auto;}
 
 
 
@@ -652,31 +636,32 @@ width: calc(250px * 10)}
 .serv-a{display:grid;
 grid-template-columns: repeat(2,1fr);
 width: 90%;
-margin: 50px auto;
-max-width:1100px;
+margin: 0px auto;
+max-width:1300px;
 color: black;}
 
 .serv-a p{
 font-family:didactgothic;
-font-size: 18px;
+font-size: 19px;
 text-align: left;
-margin-top: 20px}
+margin-top: 30px}
 
 .serv-a p b{font-family:didactgothic;
- 		font-size: 18px;
+ 		font-size: 19px;
  	text-align: left;}
 
 
 .serv-a ul{
- 		font-size: 20px;
+ 		font-size: 19	px;
  	margin-left: 50px;
- 	text-align: left; }
+ 	text-align: left; 
+ 	margin-top: 10px}
 
 .serv-a ul {list-style: none;}
 
 .serv-a  ul li::before {
   content: "+ ";
-  font-size:25px;
+  font-size:28px;
   color: orange}
 
 .serv-a li{font-family:didactgothic;;
@@ -693,10 +678,8 @@ cursor: pointer;color:
 .ideas{display: grid;
 grid-template-columns: repeat(2,1fr);
 width:1100px;
-margin: 100px auto;
+margin: 50px auto;
 grid-gap: 30px}
-
-
 
 
 .ideas .img-idea img{
@@ -710,15 +693,15 @@ align-items: center;
 margin: 0 auto;}
 
 .ideas .img-idea p{
-padding: 14px;
+padding:10px;
 width: 320px;
 position: absolute;
 margin-top: -50px;
  background:#e75516;
-margin-left: 120px;
+margin-left: 200px;
 font-family:didactgothic;
 color: white;
-font-size: 14px}
+font-size: 15px}
 
 
 .ideas .texto-idea h5{
@@ -772,9 +755,7 @@ color:#ff7915;
 cursor: pointer; }
 
 
-
-
-.con2{width: 80%; margin: 40px auto;
+.con2{width: 80%; margin:10px auto;
 	 text-align: center; border: 1px solid;
   border-image: linear-gradient(60deg, red, orange) 1;
 background:#293133;
@@ -783,7 +764,7 @@ background-image: url(img/con2.svg);
 		background-size: cover;
 		background-repeat: no-repeat;
 		 background-position: center;
-		 margin-top: 100px;
+		 margin-top: 80px;
 		 border-radius: 30px}
 
 .con2 .cont{ font-size: 35px; display: flex;
@@ -868,17 +849,16 @@ max-width: 1300px;
 display: grid;
 grid-template-columns: repeat(2,1fr);
 margin: 0 auto;
-padding-top: 50px}    
-
+padding-top:20px}    
 
 .footer-logo{width: 130%}
 
 .footer-logo h6{
 		color:white;
-	font-size: 30px;
+	font-size: 28px;
 border-bottom: 1px solid #FFCB03;
 width: 190px;
-margin-bottom: 20px;
+margin-bottom: 10px;
 letter-spacing: 2px;
 font-family:usar2;;
 text-align: center;}
@@ -887,15 +867,15 @@ text-align: center;}
 .footer-logo p{
 font-family:didactgothic;	
 		color:white;
-	font-size: 20px;
+	font-size: 18px;
 	width: 80%;
-	max-width:500px}
+	max-width:440px}
 
 .footer-agencie ul{display: flex;
-margin: 20px 0px;
+margin: 10px 0px;
 max-width: 300px}
 
-.footer-agencie ul i{font-size: 35px;
+.footer-agencie ul i{font-size: 30px;
 padding: 5px 10px}
 
 .fa-facebook{color: #1877f2}
@@ -904,21 +884,21 @@ padding: 5px 10px}
 .fa-whatsapp{color:	#25D366}
 
 
-.footer-servicios{margin-left: 20%}
+se{margin-left: 20%}
 
 
 .footer-servicios h6{
 margin: 0px auto
 		color:white;
-	font-size: 30px;
+	font-size: 28px;
 border-bottom: 1px solid #FFCB03;
 width: 150px;
-margin-bottom: 20px;
+margin-bottom: 10px;
 letter-spacing: 2px;
 font-family:usar2;}
 
 .footer-servicios ol{
-font-size: 20px;
+font-size: 18px;
 display: grid;
 grid-template-columns: repeat(2,1fr);
 max-width: 400px}
@@ -932,22 +912,18 @@ color:white;}
 .footer-servicios ol li::before {
   content: "+ ";
   color: yellow;
-  font-size:20px}
+  font-size:18px}
 
 .footer-contacto {
 border-top:2px solid gray}
-
-
 
 .footer-contacto ul{width: 95%;
 max-width: 1200px;
 display: grid;
 grid-template-columns: repeat(3,1fr);
-margin: 20px auto;
-padding-top: 20px;}    
+margin: 10px auto;}    
 
-
-.footer-contacto li{font-size: 30px;
+.footer-contacto li{font-size: 27px;
 list-style: none;
 display: flex;}
 
@@ -957,15 +933,14 @@ justify-content: center;
 align-items: center;}
 
 
-.footer-contacto li a{font-size: 30px;
+.footer-contacto li a{font-size: 27px;
 list-style: none;
 display: flex;
 color: white;
 text-decoration: none;}
 
-.footer-contacto li  i{font-size: 40px;
+.footer-contacto li  i{font-size: 38px;
 color: #FFCB03;
-padding: 0px 5px;
 list-style: none;}
 
 
@@ -975,57 +950,55 @@ padding: 0px 5px;
 list-style: none;}
 
 
-.footer-contacto li a {font-size: 18px;
+.footer-contacto li a {font-size: 16px;
 padding: 0px 5px;
 list-style: none;
 font-family:didactgothic}
 
 
-.footer-contacto li a:hover{font-size: 18px;
+.footer-contacto li a:hover{font-size: 16px;
 padding: 0px 5px;
 list-style: none;
 font-family:didactgothic;
 color: orange}
 
 
-.footer-contacto li a p{font-size: 18px;
+.footer-contacto li a p{font-size: 16px;
 padding: 0px 5px;
 list-style: none;
 font-family:didactgothic}
 
-.grupo2{
-background: #010e11}
+.grupo2{background:#0c1d2a}
 
 .grupo2-1{margin: 0 auto;
-padding: 20px 0px;
+padding: 10px 0px;
 width: 95%;
 max-width: 1300px;}
 
 
 
-.grupo2 a{font-size: 18px;
+.grupo2 a{font-size: 16px;
 color:white;
 padding: 0px;
 margin: 0px;
 font-family:didactgothic;
-text-decoration: none;
-}
+text-decoration: none;}
 
 
-.grupo2 a:hover{font-size: 18px;
+.grupo2 a:hover{font-size: 16px;
 color:orange;
 padding: 0px;
 margin: 0px;
 font-family:didactgothic;
 text-decoration: none;}
 
-.grupo2 p{font-size: 15px;
+.grupo2 p{font-size: 14px;
 color:white;
-width: 60%;
+width: 50%;
 text-align: left;
 padding: 0px;
 margin: 0px;
-max-width: 500px;
+max-width:500px;
 font-family:didactgothic}
 
 
@@ -1409,17 +1382,17 @@ text-align: center}
 padding: 60px 0px}
 
 
-.quienes-img{background: url(img/img-parax.jpg);
+.quienes-img{ackground: url(img/img-parax.jpg);
 background-size: 100% 100%;
 width:425px;
 height: 300px;
 border-radius: 0px;
-animation: parax 30s infinite;
+animation: rax 30s infinite;
 border-top:15px solid orange;
 border-left:15px solid orange;
 border-radius:10px;}
 
-@keyframes parax{
+@keyframes prax{
 20%{background: url(img/img1-parax.jpg);
 background-size: 100% 100%;
 }
@@ -2099,7 +2072,7 @@ width: 100%}
 
 .clientes-a{
 margin: 0 auto;
-max-width: 700px;
+max-width: 1000px;
 width: 100%;} 
 
 .texto-cliente h5{font-size: 20px;
@@ -2129,7 +2102,7 @@ align-items: center;
 margin: 10px auto;
 animation: scroll 30s linear infinite;
 -webkit-animation:scroll 30s linear infinite;
-width: calc(150px * 10)}
+width: calc(100px * 10)}
 
 
 .clientes-img ul li{width: 200px;list-style: none;}
