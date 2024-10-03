@@ -66,17 +66,43 @@ opacity:0 ;visibility: hidden;}
     	position: relative; 
     	margin: 0 auto;} 
 
+
+.top{ 
+ margin: 0 auto;
+color: white;
+background:rgba(0,0,0,1);
+width: 100%;
+height: 30px}	
+
+
+.top a{
+  color:black;
+  cursor: pointer;
+  text-align:center;
+  border: none;
+  border-radius: 20px;
+font-size:15px;
+padding: 5px 10px;
+margin-top: -0px;
+color: white;	
+font-family:didactgothic;}
+
+.top a:hover {
+  background-size: 100% 50%;
+  transition-delay: 50ms ;}
+
+
+
 .contenedor{ 
  margin: 0 auto;
 color: white;
-background:rgba(0,0,0,0.81);
+background:rgba(0,0,0,0.66);
 width: 100%}		
 
 
 .menu{width: 100%;
 max-width:1300px;
 margin: 0 auto;
-padding-top:10px;
 justify-content: right;
 align-items: center;
 display:grid;
@@ -90,18 +116,14 @@ text-decoration: none;
 color: white;}
 
 .contenedor .menu a img{
-width: 80px;
-height:70px;
-margin: 0px 2px;
-border-radius: 50%;
-padding: 5px;
-margin-top:-10px;}
+width: 60px;
+height:50px;}
 
 
 .contenedor .logo a h1{
 	font-family:Modric;
-margin-top:7px;
-font-size: 38px;}
+font-size: 36px;
+font-family:didactgothic;}
 
 .contenedor .logo a h1:hover
 {text-shadow:0px 0px 1px yellow}
@@ -109,44 +131,30 @@ font-size: 38px;}
 .menu ul {
 display: flex;
 width: 100%;
-justify-content:center;
-align-items:center;}
-
-.menu ul {
-list-style: none;}
+justify-content:right;
+align-items:right;
+list-style: none;
+padding-right: 25px}
 
  .menu ul  a{
  text-decoration: none;
  color: white ;
- font-size: 20px;
-margin: 5px;
+ font-size:20px;
 border-bottom:2px solid transparent;
-	font-family:Modric;	}
+	font-family:monospace;	
+font-family:didactgothic;
+margin: 0px 8px;}
+
+.menu ul #Inicio{
+	 	 	color:#FFCB03;
+border-bottom:2px solid #FFCB03;
+ 	 	transition: all 1s ease;}
+
 
 .menu ul a:hover{
 	 	 	color:#FFCB03;
 border-bottom:2px solid #FFCB03;
  	 	transition: all 1s ease;}
-
-#numero{
-  color:black;
-  cursor: pointer;
-  text-align:center;
-  border: none;
-  border-radius: 20px;
-background-size: 500% 100%;
-;background-image: linear-gradient( to right,#FFD700,#ff9a44,#e75516,#e75516);
-font-size:18px;
-font-family:Modric;	
-padding: 5px 10px;
-margin-top: -0px}
-
-#numero:hover {
-  background-size: 100% 50%;
-  transition-delay: 50ms ;}
-
-#numero a {color: white; font-size:20px;
-padding: 10px 5px;}
 
 
 .what{position: fixed;
@@ -199,59 +207,68 @@ max-width: 550px}
 
 
 .mensaje{
-width: 700px;
+width:800px;
 margin: 0px auto ;
 margin-top: 220px;
 background: rgba(0,0,0,0.0);}
 
-.mensaje h1{ 
+.mensaje h2{ 
 color: white ;
-font-size:70px; 
+font-size:5px; 
 margin: 10px 0px;
-letter-spacing:px;
-font-family:Modric;
 text-align: center;
+font-family: monospace;
+text-shadow: 0px 0px 10px black}
 
-font-family:usar2;}
+.mensaje h2 b{color:#FFCB03;
+font-family: monospace;}
 
-.mensaje h1 b{color:#FFCB03;
-font-family:Modric;
-
-font-family:usar2;}
+.mensaje h3{ 
+color: white ;
+font-size:65px; 
+margin: 10px 0px;
+text-align: center;
+font-family: monospace;
+text-shadow: 0px 0px 10px black}
 
 
  .mensaje a p{ color:white ;	
-font-size: 28px; 
+font-size: 30px; 
 margin: 20px auto;
 width: 100%;
 text-align: left;
-font-family:didactgothic;
 border:2px solid #FFCB03;
-width: 350px;
 margin-top: 20px;
 background: rgba(0,0,2,0.6);
-height: 70px;
+height: 50px;
 display:flex;
-align-items:center;}				
+align-items:center;
+font-family:didactgothic;
+text-align: center;
+display: flex;
+justify-content: 
+center}				
 
 
  .mensaje a p b{background:#FFCB03;
 color: black;
-font-family: monospace;
-font-size:30px; 
-height: 70px;
+font-size:35px; 
+height: 50px;
 display:flex;
 align-items:center;
 width:60px;
-padding-left:10px;
-margin-right:10px; }
+font-family:didactgothic;
+text-align: center;
+display: flex;
+justify-content: 
+center}
 
  .mensaje a {text-decoration: none;}
  
  .mensaje p:hover{
  	 transition: all 500ms  ease-in-out;
 		color: #FFCB03;
-	transform: translateX(20px);}
+	transform: translateX(px);}
 
 /*Saludo agencia*/
 .agencia{display: grid;
@@ -434,8 +451,6 @@ margin: 20px auto;
 max-width: 950px;
 grid-gap: 20px;}
 
-
-
 .servicio{background: rgb(21, 22, 23,0.8);
 padding: 15px 10px;
 box-shadow: 10px 5px 15px black;
@@ -445,10 +460,18 @@ max-width: 370px;
 margin: 0 auto}
 
 
-.serv .servicio i{font-size:50px;
-margin-top: 10px;
-margin-bottom: 10px;
-color:#FFCB03}
+.serv .servicio i{font-size:40px;
+margin-top:5px;
+margin-bottom:5px;
+color:#FFCB03;;
+width: 70px;
+height: 60px;
+border-radius:5px;
+text-align: center;
+display: flex;justify-content: center;
+align-items: center;
+margin: 0 auto;
+box-shadow: 0px 0px 2px rgb(251,252,253,1)}
 
 
 .serv .servicio h4{
@@ -473,8 +496,7 @@ padding-bottom: 10px}
 .servicio:hover{background:rgba(151, 189, 5, 0.8);
 color: black;
 	cursor: pointer;
-background-image: linear-gradient( to right,#FFD700,#e75516);	
-}
+background-image: linear-gradient( to right,#FFD700,#e75516)}
 
 .servicio:hover> p{
 color: black;
@@ -482,9 +504,8 @@ cursor: pointer;}
 
 
 .servicio:hover> i{
-margin-top: 10px;
-margin-bottom: 10px;
-color:black}
+color:black;
+box-shadow: 0px 0px 1px rgb(1,2,3,1)}
 
 
 .metodologia{
@@ -756,16 +777,14 @@ cursor: pointer; }
 
 
 .con2{width: 80%; margin:10px auto;
-	 text-align: center; border: 1px solid;
-  border-image: linear-gradient(60deg, red, orange) 1;
-background:#293133;
+text-align: center;
 max-width: 700px;
-background-image: url(img/con2.svg);	
-		background-size: cover;
-		background-repeat: no-repeat;
-		 background-position: center;
-		 margin-top: 80px;
-		 border-radius: 30px}
+background-image: url(img/con2.svg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+margin-top: 80px;
+border-radius:10px}
 
 .con2 .cont{ font-size: 35px; display: flex;
 			 align-items: center;
@@ -775,15 +794,12 @@ background-image: url(img/con2.svg);
 .con2 h5{
 color: white;
 font-family:didactgothic;
-padding-top: 30px;
 color:#FFCB03;
 letter-spacing: 2px;}
 
 .con2 p{ font-size:20px; 
-			justify-content: center; 
-			margin: 10px auto ;
-		color: white;
-	font-family:didactgothic;
+justify-content: center; 
+color: white;
 width: 700px}			
 
 .contas {  background: #fc4a1a; 
@@ -841,7 +857,7 @@ font-family:didactgothic;
 text-align: center;font-family:didactgothic;}
 
 
-footer{background: #181e23;
+footer{background: #111a23;
     color: #dadfe2;}
 
 .footer-agencie{width: 95%;
@@ -855,9 +871,9 @@ padding-top:20px}
 
 .footer-logo h6{
 		color:white;
-	font-size: 28px;
+	font-size: 25px;
 border-bottom: 1px solid #FFCB03;
-width: 190px;
+width: 160px;
 margin-bottom: 10px;
 letter-spacing: 2px;
 font-family:usar2;;
@@ -890,9 +906,9 @@ se{margin-left: 20%}
 .footer-servicios h6{
 margin: 0px auto
 		color:white;
-	font-size: 28px;
+	font-size: 25px;
 border-bottom: 1px solid #FFCB03;
-width: 150px;
+width: 120px;
 margin-bottom: 10px;
 letter-spacing: 2px;
 font-family:usar2;}
@@ -968,7 +984,7 @@ padding: 0px 5px;
 list-style: none;
 font-family:didactgothic}
 
-.grupo2{background:#0c1d2a}
+.grupo2{background:#000A15}
 
 .grupo2-1{margin: 0 auto;
 padding: 10px 0px;
