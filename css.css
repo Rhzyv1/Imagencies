@@ -71,11 +71,18 @@ opacity:0 ;visibility: hidden;}
  margin: 0 auto;
 color: white;
 background:rgba(0,0,0,1);
-width: 100%;
-height: 30px}	
+width: 100%;}
 
+.top article{	
+display: grid;
+grid-template-columns: repeat(2,1fr);
+max-width: 1300px;
+margin: 0 auto}	
 
-.top a{
+.top a i{font-size:18px;
+padding:5px}
+
+.top a {
   color:black;
   cursor: pointer;
   text-align:center;
@@ -83,14 +90,35 @@ height: 30px}
   border-radius: 20px;
 font-size:15px;
 padding: 5px 10px;
-margin-top: -0px;
 color: white;	
-font-family:didactgothic;}
+font-family:didactgothic;
+text-decoration: none;}
 
 .top a:hover {
   background-size: 100% 50%;
-  transition-delay: 50ms ;}
+  transition-delay: 50ms ;
+color: yellow}
 
+.top .REDES-S{display: flex;
+justify-content: flex-end;
+margin-right: 20px}
+
+.top .REDES-S a {padding: 0px 3px;
+font-size: 20px}
+
+
+.top .REDES-S a {padding: 0px 3px;}
+
+.top .REDES-S a i {font-size: 22px}
+
+.top .REDES-S a:hover{transform: scale(1.4);
+transition:all 1s ease-in-out }
+
+
+.fa-facebook{color: #1877f2}
+.fa-linkedin-square{color:#0073b1}
+.fa-instagram{color: #E1306C}
+.fa-whatsapp{color:	#25D366}
 
 
 .contenedor{ 
@@ -167,7 +195,7 @@ box-shadow: 1px 1px 1px black ;}
 .what a i{padding:10px;
 border-radius: 50%;
 position: absolute;
-background:#eae6ca;
+background:rgba(255,255,255,0.7);
 border-radius: 50%;
 font-size:40px;
 animation: what 5s infinite;
@@ -209,12 +237,12 @@ max-width: 550px}
 .mensaje{
 width:800px;
 margin: 0px auto ;
-margin-top: 220px;
+margin-top: 200px;
 background: rgba(0,0,0,0.0);}
 
 .mensaje h2{ 
 color: white ;
-font-size:5px; 
+font-size:25px; 
 margin: 10px 0px;
 text-align: center;
 font-family: monospace;
@@ -225,50 +253,26 @@ font-family: monospace;}
 
 .mensaje h3{ 
 color: white ;
-font-size:65px; 
-margin: 10px 0px;
+font-size:75px; 
 text-align: center;
 font-family: monospace;
-text-shadow: 0px 0px 10px black}
+text-shadow: 0px 0px 10px black;
+
+font-family:didactgothic;}
 
 
- .mensaje a p{ color:white ;	
-font-size: 30px; 
-margin: 20px auto;
-width: 100%;
-text-align: left;
-border:2px solid #FFCB03;
-margin-top: 20px;
-background: rgba(0,0,2,0.6);
-height: 50px;
-display:flex;
-align-items:center;
+ .mensaje a {
 font-family:didactgothic;
-text-align: center;
+font-size: 30px;
 display: flex;
-justify-content: 
-center}				
-
-
- .mensaje a p b{background:#FFCB03;
-color: black;
-font-size:35px; 
-height: 50px;
-display:flex;
-align-items:center;
-width:60px;
-font-family:didactgothic;
-text-align: center;
-display: flex;
-justify-content: 
-center}
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+width: 300px;
+color:black;
+background: rgba(255,255,255,0.8);}
 
  .mensaje a {text-decoration: none;}
- 
- .mensaje p:hover{
- 	 transition: all 500ms  ease-in-out;
-		color: #FFCB03;
-	transform: translateX(px);}
 
 /*Saludo agencia*/
 .agencia{display: grid;
@@ -617,7 +621,7 @@ letter-spacing: 2px}
 .texto-cliente h6{font-size: 30px;
 letter-spacing: 1px;
 margin: 10px auto;
-width: 500px;
+width: 450px;
 color:#ff7915;
 text-align: center;
 font-family:usar2;
@@ -657,15 +661,15 @@ width: calc(250px * 10)}
 .serv-a{display:grid;
 grid-template-columns: repeat(2,1fr);
 width: 90%;
-margin: 0px auto;
-max-width:1300px;
+margin:20px auto;
+max-width:1100px;
 color: black;}
 
 .serv-a p{
 font-family:didactgothic;
 font-size: 19px;
 text-align: left;
-margin-top: 30px}
+margin-top: 40px}
 
 .serv-a p b{font-family:didactgothic;
  		font-size: 19px;
@@ -775,42 +779,42 @@ color:#ff7915; }
 color:#ff7915;
 cursor: pointer; }
 
-
-.con2{width: 80%; margin:10px auto;
-text-align: center;
-max-width: 700px;
+.con2{width: 80%; 
 background-image: url(img/con2.svg);
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
 margin-top: 80px;
-border-radius:10px}
-
-.con2 .cont{ font-size: 35px; display: flex;
-			 align-items: center;
-			justify-content: center; margin: 10px auto ;
-			font-family: monospace;}
+border-radius:20px;
+padding: 20px;
+margin:10px auto;
+text-align: center;
+max-width: 600px;}
 
 .con2 h5{
 color: white;
 font-family:didactgothic;
 color:#FFCB03;
-letter-spacing: 2px;}
+letter-spacing: 2px;
+font-size: 35px}
 
-.con2 p{ font-size:20px; 
-justify-content: center; 
+.con2 p{ font-size:17px; 
 color: white;
-width: 700px}			
+width: 500px;font-family:didactgothic;
+text-align: center;
+margin:0px auto;
+text-shadow: 10px 10px 10px black}			
 
 .contas {  background: #fc4a1a; 
-;  font-size:20px; 
-			justify-content: center ;
-			color: black ; 
-			border-radius: 5px;
-			padding: 10px 0px;
-			width: 30%;
-			margin: 30px auto;
-			color: white}
+font-size:20px; 
+justify-content: center ;
+color: black ; 
+border-radius: 5px;
+padding: 5px 0px;
+width: 40%;
+margin: 0px auto;
+color: white;
+margin-top: 10px}
 
 
 .contas i{text-decoration: none;
@@ -820,7 +824,8 @@ width: 700px}
 
 .contas a{text-decoration: none;
 		color:white;
-	font-size: 20px;font-family:didactgothic;}
+	font-size: 20px;
+	font-family:didactgothic;}
 
 .contas:hover{ background: rgb(235, 142, 7)
 			; font-size: 20px; 
@@ -900,7 +905,6 @@ padding: 5px 10px}
 .fa-whatsapp{color:	#25D366}
 
 
-se{margin-left: 20%}
 
 
 .footer-servicios h6{
