@@ -223,35 +223,31 @@ margin: 0 auto;
 max-width: 1300px}
 
 
-.flex article img{width: 100%;
-margin-top: 200px;
-height: 250px;
-animation: up 10s infinite;
-max-width: 550px}
-
 .mensaje{
 width:800px;
 margin: 0px auto ;
-margin-top:180px;
+margin-top:150px;
 background: rgba(0,0,0,0.0);}
 
 .mensaje h2{ 
 color: white ;
 font-size:25px; 
-margin: 10px auto;
+margin:0px auto;
 text-align: center;
 font-family: monospace;
 text-shadow: 10px 10px 10px black;
 font-family:didactgothic;}
 
 .mensaje h2 b{color:#FFCB03;
-font-family: monospace;}
+font-family: monospace;
+font-family:didactgothic;}
 
 .mensaje h3{ 
 color: white ;
 font-size:65px; 
 text-align: center;
 font-family: monospace;
+font-family:didactgothic;
 text-shadow: 0px 0px 10px black;}
 
  .mensaje a {
@@ -260,12 +256,12 @@ font-size: 30px;
 display: flex;
 justify-content: center;
 align-items: center;
-margin:10px auto;
+margin:20px auto;
 width: 350px;
 color:white;
 background: rgba(15,15,15,0.8);
 border-radius:30px;
-border:1px solid white }
+border:1px solid gray}
 
 .mensaje a {text-decoration: none;}
 
@@ -282,7 +278,7 @@ color: black}
 /*Saludo agencia*/
 .agencia{display: grid;
 grid-template-columns: repeat(2,1fr);
-margin: 60px auto;
+margin: 30px auto;
 grid-gap: 20px;
 max-width:1200px;
 width: 90%;}
@@ -292,7 +288,6 @@ letter-spacing: 1px;
 margin: 0px;
 font-family:usar2;
 color:#ff7915;
-padding: 5px;
 margin-bottom:10px;}
 
 .agencia p{ 
@@ -321,10 +316,10 @@ border-radius: 20px;}
 
 .agencia-img:hover> img{width: 100% ;
 height:270px;
-margin-left:-5%;
-margin-top: 3;
+margin-left:-6%;
+margin-top:6%;
 border-radius: 20px;
-transition: all 1.5s ease-in-out;}
+transition: all 1s ease-in-out;}
 
 
 
@@ -343,7 +338,7 @@ padding: 30px;}
 
 .fondo2 h5{font-size: 35px;
 color: white;
-font-family:didactgothic;
+font-family:usar2;
 ;text-align: center;
 margin: 0px auto;
 width: 500px;
@@ -480,7 +475,7 @@ text-align: center;
 display: flex;justify-content: center;
 align-items: center;
 margin: 0 auto;
-box-shadow: 0px 0px 2px rgb(251,252,253,1)}
+box-shadow: 0px 0px 5px rgb(251,252,253,1)}
 
 
 .serv .servicio h4{
@@ -613,18 +608,18 @@ margin: 0 auto;
 max-width: 1300px;
 width: 100%;} 
 
-.texto-cliente h5{font-size: 25px;
+.texto-cliente h5{font-size:28px;
 margin: 10px auto;
-width: 120px;
+width: 130px;
 color:#FFCB03;
 text-align: center;
 font-family:didactgothic;
 border-bottom: 2px solid #FFCB03;
 letter-spacing: 2px}
 
-.texto-cliente h6{font-size:33px;
+.texto-cliente h6{font-size:30px;
 letter-spacing: 1px;
-margin: 10px auto;
+margin:5px auto;
 width: 450px;
 color:#ff7915;
 text-align: center;
@@ -681,7 +676,7 @@ margin-top:20px}
 
 
 .serv-a ul{
- 		font-size: 19	px;
+ 		font-size: 19px;
  	margin-left: 50px;
  	text-align: left; 
  	margin-top: 10px}
@@ -706,9 +701,10 @@ cursor: pointer;color:
 
 .ideas{display: grid;
 grid-template-columns: repeat(2,1fr);
-width:1100px;
+max-width:1100px;
 margin: 50px auto;
-grid-gap: 30px}
+grid-gap: 30px;
+width: 90%}
 
 
 .ideas .img-idea img{
@@ -736,9 +732,8 @@ font-size: 15px}
 .ideas .texto-idea h5{
 font-size:30px;
 text-align: left;
-margin: 0px auto;
 font-family:usar2;
-width: 90%;
+width: 100%;
 color:#ff7915;}
 
 
@@ -790,10 +785,10 @@ background-repeat: no-repeat;
 background-position: center;
 margin-top: 80px;
 border-radius:20px;
-padding: 20px;
+padding: 20px 40px;
 margin:20px auto;
 text-align: center;
-max-width: 700px;}
+max-width: 650px;}
 
 .con2 h5{
 color: white;
@@ -803,18 +798,19 @@ letter-spacing: 2px;
 font-size: 40px}
 
 .con2 p{ font-size:20px; 
-color: white;
+color: white;|
 width: 500px;font-family:didactgothic;
 text-align: center;
 margin:0px auto;
 text-shadow: 10px 10px 10px black}			
 
-.contas {  background: #fc4a1a; 
+.contas {  
+background: #fc4a1a; 
 font-size:20px; 
 justify-content: center ;
 color: black ; 
 border-radius: 5px;
-padding: 5px 0px;
+padding: 5px;
 width: 40%;
 margin: 0px auto;
 color: white;
@@ -823,7 +819,7 @@ margin-top: 10px}
 
 .contas i{text-decoration: none;
 		color:white;
-	font-size: 25px}
+	font-size: 30px}
 
 
 .contas a{text-decoration: none;
@@ -841,30 +837,34 @@ margin-top: 10px}
 	color: white}
 
 
-.cite{width: 80% ; 
+.cite{width:70% ; 
 	align-items: center; 
 	justify-content: center;
-	margin: 50px auto;
-max-width: 1200px}
+	margin: 20px auto;
+max-width: 1000px}
 
-.lo	{width: 90%;margin: 0px auto}
+.lo	{width: 90%;
+margin: 0px auto}
 
-.lo img{ border-radius: 50%; width: 170px; 
-	display: flex; justify-content: center;
-align-items: center; margin: 0 auto}
+.lo img{ border-radius: 50%; 
+width: 150px; 
+display: flex; 
+justify-content: center;
+align-items: center; 
+margin: 0 auto}
 
 .lo h3{ 	
   font-size: 30px ;
 	padding-bottom:20px;
 	text-align: center;
-font-family:didactgothic;	
-}
+font-family:didactgothic;}
 
-.lo p{ font-size: 30px; 
-	margin-bottom: 40px ;
+.lo p{ font-size: 25px; ;
 	border-bottom: 1px solid black;
-text-align: center;font-family:didactgothic;}
-
+text-align: center;
+font-family:didactgothic;
+width: 70%;
+margin: 0 auto}
 
 footer{background: #111a23;
     color: #dadfe2;}
@@ -882,9 +882,8 @@ padding-top:20px}
 		color:white;
 	font-size: 25px;
 border-bottom: 1px solid #FFCB03;
-width: 160px;
+width: 150px;
 margin-bottom: 10px;
-letter-spacing: 2px;
 font-family:usar2;;
 text-align: center;}
 
@@ -916,10 +915,10 @@ margin: 0px auto
 		color:white;
 	font-size: 25px;
 border-bottom: 1px solid #FFCB03;
-width: 120px;
+width: 110px;
 margin-bottom: 10px;
-letter-spacing: 2px;
-font-family:usar2;}
+font-family:usar2;
+text-align: center;}
 
 .footer-servicios ol{
 font-size: 18px;
@@ -932,6 +931,14 @@ max-width: 400px}
 list-style: none;
 font-family:didactgothic;
 color:white;}
+
+
+.footer-servicios ol li:hover{text-decoration: none;
+list-style: none;
+font-family:didactgothic;
+color:yellow;
+cursor: pointer;}
+
 
 .footer-servicios ol li::before {
   content: "+ ";
@@ -951,24 +958,21 @@ margin: 10px auto;}
 list-style: none;
 display: flex;}
 
-
 .footer-contacto ul .ubi{display: flex;
 justify-content: center;
 align-items: center;}
 
-
-.footer-contacto li a{font-size: 27px;
+.footer-contacto li a{font-size: 25px;
 list-style: none;
 display: flex;
 color: white;
 text-decoration: none;}
 
-.footer-contacto li  i{font-size: 38px;
+.footer-contacto li  i{font-size: 35px;
 color: #FFCB03;
 list-style: none;}
 
-
-.footer-contacto li a i{font-size: 40px;
+.footer-contacto li a i{font-size: 35px;
 color: #FFCB03;
 padding: 0px 5px;
 list-style: none;}
