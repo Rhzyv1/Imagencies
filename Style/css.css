@@ -241,7 +241,7 @@ max-width: 1300px}
 .mensaje{
 width:700px;
 margin: 0px auto ;
-margin-top:140px;
+margin-top:120px;
 background: rgba(0,0,0,0.0);}
 
 .mensaje h4{ 
@@ -857,10 +857,9 @@ padding-top:20px}
 
 .footer-logo{width: 130%}
 
-.footer-logo h6{
+.footer-logo h6 u{
 		color:white;
-	font-size: 25px;
-border-bottom: 1px solid #FFCB03;
+	font-size: 25px;;
 width: 150px;
 margin-bottom: 10px;
 font-family:usar2;;
@@ -890,15 +889,17 @@ padding: 5px 10px}
 transition: all 1s ease;}
 
 
-.footer-servicios h6{
-margin: 0px auto
-		color:white;
+.footer-servicios h6 u{
+margin: 0px auto;
+		color:orange;
 	font-size: 25px;
-border-bottom: 1px solid #FFCB03;
-width: 110px;
 margin-bottom: 10px;
 font-family:usar2;
-text-align: center;}
+text-align: center;
+padding: 10px;initial-letter: 3px	;
+width: 200px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 .footer-servicios ol{
 font-size: 18px;
