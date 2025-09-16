@@ -207,11 +207,50 @@ border-radius:3px 0px 0px 3px;}
 opacity:1 ;
 visibility:visible;} 
 
-label{position:absolute;
-top: 20px;
-right: 48.6%;
-color: white;
-font-size: 25px;}
+.labelbtn{position:absolute;
+top: 15px;
+color: white;padding: 0px 5px;
+cursor: pointer;
+width: 45px;
+height:30px;
+margin: 0 auto;
+display: flex;
+justify-self: center;}
+
+.labelbtn .span1,.span2,.span3{
+  position: absolute;
+  content: ' ';
+  background: rgb(240, 245, 243);
+  width: 33px;
+  height: 5px;
+  border-radius: 5px;
+  transition: all 400ms ease;}
+
+.span2{top:12px} 
+.span3{top:24px} 
+
+
+#btn:checked ~ .labelbtn .span1{ transform: rotate(140deg);
+top: 12px;}
+
+#btn:checked ~ .labelbtn .span3{ transform: rotate(-140deg);
+top: 12px;}
+
+#btn:checked ~ .labelbtn .span2{opacity: 0;
+visibility: hidden;}
+
+
+.labelbtn:hover >.span1{background:  #ffcd03ce;;} 
+.labelbtn:hover >.span2{background:  #FFCB03c0;;}
+.labelbtn:hover >.span3{background:  #FFCB03c0;;}
+
+
+#btn:checked ~ .desplegable{opacity: 1;
+visibility: visible;
+height: 200px;
+margin-top: -0px;
+transform: translateY(0px);}
+
 
 .desplegable{width: 100%; 
 z-index: 1;
@@ -224,14 +263,6 @@ background: rgba(0, 0, 0, 0.66);position: absolute;
 transition: 1s all ease-in-out}
 
 #btn{display: none;}
-
-#btn:checked ~ .desplegable{opacity: 1;
-visibility: visible;
-height: 200px;
-margin-top: 0px;
-transform: translateY(0px);
-}
-
 
 
 .desplegable ul{width: 150px;margin: 0 auto;
@@ -254,7 +285,6 @@ grid-template-columns: repeat(1,1fr);
 width: 95%;
 margin: 0 auto;
 max-width:870px}
-
 
 .mensaje{
 width:600px;
