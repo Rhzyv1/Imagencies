@@ -1,0 +1,78 @@
+/*Banner y menu*/
+@media screen and (max-width:900px) {
+.menu-lateral{display:block;
+opacity:1 ;
+visibility:visible;} 
+
+.labelbtn{position:absolute;
+top: 15px;
+color: white;padding: 0px 5px;
+cursor: pointer;
+width: 45px;
+height:30px;
+margin: 0 auto;
+display: flex;
+justify-self: center;}
+
+.labelbtn .span1,.span2,.span3{
+  position: absolute;
+  content: ' ';
+  background: rgb(240, 245, 243);
+  width: 33px;
+  height: 2px;
+  border-radius: 5px;
+  transition: all 400ms ease;}
+
+.span2{top:12px} 
+.span3{top:24px} 
+
+
+#btn:checked ~ .labelbtn .span1{ transform: rotate(140deg);
+top: 12px;}
+
+#btn:checked ~ .labelbtn .span3{ transform: rotate(-140deg);
+top: 12px;}
+
+#btn:checked ~ .labelbtn .span2{opacity: 0;
+visibility: hidden;}
+
+
+.labelbtn:hover >.span1{background:  #ffcd03ce;;} 
+.labelbtn:hover >.span2{background:  #FFCB03c0;;}
+.labelbtn:hover >.span3{background:  #FFCB03c0;;}
+
+
+#btn:checked ~ .desplegable{opacity: 1;
+visibility: visible;
+height: 200px;
+margin-top: -0px;
+transform: translateY(0px);}
+
+
+.desplegable{width: 100%; 
+z-index: 1;
+heigh: 0px;
+opacty: 0;
+visibility: hidden;
+	overflow: hidden;
+background: rgba(0, 0, 0, 0.66);position: absolute;
+ height: 0px;
+transition: 1s all ease-in-out}
+
+#btn{display: none;}
+
+
+.desplegable ul{width: 150px;margin: 0 auto;
+height: 0px;}
+
+.desplegable ul li{ text-align: center;
+color: white;
+margin: 10px;
+font-size: 17px;
+;background-color: #fe8623d4;
+padding: 5px;border-radius: 20px;
+list-style: none;}
+
+.desplegable ul li a{text-align: center;
+color: white; font-family:didactgothic;
+text-decoration: none;}}
